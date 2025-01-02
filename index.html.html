@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MUSE Fashion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+}
+
+
+        .product {
+            background-color: white;
+            width: 250px;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .product p {
+        color: #333333; /* Dark gray */
+        font-size: 1rem;
+}
+
+
+        .product .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .add-to-cart-btn {
+            background-color: #333;
+            color: white;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #444;
+        }
+
+        .cart-button {
+            background-color: #222;
+            color: white;
+            padding: 1rem 2rem;
+            margin: 2rem auto;
+            border-radius: 5px;
+            display: block;
+            font-size: 1.2rem;
+            text-align: center;
+            width: 200px;
+            cursor: pointer;
+        }
+
+        .cart-button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MUSE Fashion</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="code.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content (Product Display) -->
+    <div class="main-content">
+        <!-- Women's Collection -->
+        <div class="product">
+            <img src="https://www.gulahmedshop.com/media/catalog/product/w/n/wns-42105_2_.jpg?optimize=medium&fit=bounds&height=&width=" alt="img2.jpg">
+            <h3>Women's Elegant Dress</h3>
+            <p>Chic and elegant dress, perfect for formal events.</p>
+            <div class="price">$10.99</div>
+            <form action="shop.html" method="get">
+                <input type="hidden" name="item" value="Women's Elegant Dress">
+                <input type="hidden" name="price" value="79.99">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- Men's Collection -->
+        <div class="product">
+            <img src="https://www.gulahmedshop.com/media/catalog/product/c/a/casual_shirt_mn-cs-ss24-016_5_.jpg?optimize=medium&fit=bounds&height=&width=" alt="img3.jpg">
+            <h3>Men's Casual Shirt</h3>
+            <p>Comfortable and stylish for everyday wear.</p>
+            <div class="price">$39.99</div>
+            <form action="shop.html" method="get">
+                <input type="hidden" name="item" value="Men's Casual Shirt">
+                <input type="hidden" name="price" value="39.99">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- Children's Collection -->
+        <div class="product">
+            <img src="https://edenrobe.com/cdn/shop/products/22_B_BoysPoloShirts_EBTPS22-013_1_375x_crop_center.jpg?v=1701485690" alt="img4.jpg">
+            <h3>Kids' Fun T-shirt</h3>
+            <p>Colorful T-shirt for your little one!</p>
+            <div class="price">$19.99</div>
+            <form action="shop.html" method="get">
+                <input type="hidden" name="item" value="Kids' Fun T-shirt">
+                <input type="hidden" name="price" value="19.99">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- New Product Row 1 -->
+        <div class="product">
+            <img src="https://www.gulahmedshop.com/media/catalog/product/g/r/grey_basic_jacket_wm-jkt23-087_6_.jpg?optimize=medium&fit=bounds&height=&width=" alt="img5.jpg">
+            <h3>Women's Stylish Jacket</h3>
+            <p>Perfect for cool evenings, trendy and comfortable.</p>
+            <div class="price">$99.99</div>
+            <form action="shop.html" method="get">
+                <input type="hidden" name="item" value="Women's Stylish Jacket">
+                <input type="hidden" name="price" value="99.99">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- New Product Row 2 -->
+        <div class="product">
+            <img src="https://www.gulahmedshop.com/media/catalog/product/p/e/peach_suede_puffer_gilet_jkt-wov22-025_3_.jpg?optimize=medium&fit=bounds&height=&width=" alt="img6.jpg">
+            <h3>Men's Winter Jacket</h3>
+            <p>Keep warm and stylish this winter.</p>
+            <div class="price">$119.99</div>
+            <form action="shop.html" method="get">
+                <input type="hidden" name="item" value="Men's Winter Jacket">
+                <input type="hidden" name="price" value="119.99">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- New Product Row 3 -->
+        <div class="product">
+            <img src="https://edenrobe.com/cdn/shop/files/23_B_BoysSweaters_EBTSWT23-011_2_375x_crop_center.jpg?v=1703326427" alt="img7.jpg">
+            <h3>Kids' Cozy Sweater</h3>
+            <p>Soft and warm, ideal for chilly days.</p>
+            <div class="price">$29.99</div>
+            <form action="shop.html" method="get">
+                <input type="hidden" name="item" value="Kids' Cozy Sweater">
+                <input type="hidden" name="price" value="29.99">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Button -->
+    <a href="cart.html" class="cart-button">Go to Cart</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MUSE. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
